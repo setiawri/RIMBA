@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RIMBA.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %></title>
+
+    <link href="Styles/Main.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <div class="navigation-bar-container oneline">
+            <div class="logo-container">
+                <a class="logo" runat="server" href="~/"><%= getCompanyName() %></a>
+            </div>
+            <div class="login-view-container oneline">
+                <div><asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/">Home</asp:HyperLink></div>
+                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <AnonymousTemplate>
+                        <div><asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/Login.aspx?returnUrl=~/">Log in</asp:HyperLink></div>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <div>Hello, <%: username  %>!</div>
+                        <div><asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="lbtnLogout_Click" /></div>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+        </div>
+
+        <div class="body-container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+        <hr class="style-three" />
+        <footer>
+            <p>&copy; <%: DateTime.Now.Year + " " + getCompanyName() %></p>
+        </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,369 @@
+﻿/* **************************************************************************************************************************************************************************************************************/
+/* **************************************************************************************************************************************************************************************************************/
+/* **************************************************************************************************************************************************************************************************************/
+
+
+/* GENERIC CLASSES **********************************************************************************************************************************************************************************************/
+
+.no-padding { padding: 0px; }
+.centered { margin: 0px auto; } 
+.oneline > DIV { display:inline-block; } 
+.aligntop-alldiv > DIV { vertical-align: top; }
+.aligntop { vertical-align: top; }
+.alignmiddle { vertical-align: middle; }
+.line-separator { padding-top: 5px; padding-bottom: 5px; } .line-separator > DIV { border-top: 1px solid #D3D3D3; /* light gray */ }
+.text-bold { font-weight:bold; }
+.same-height { display:flex; }
+.center-vertically { display:flex; align-items: center; height:100%; }
+
+/* regular */
+HR.style-three 
+{
+    border:0px;
+    border-bottom: 1px solid #D3D3D3;
+    background: #999;
+}                                                           
+
+/* shadowed */
+HR.style-four 
+{
+    height:12px;
+    border:0px;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}                                                           
+
+/* rounded button */
+
+.rounded-button 
+{
+    padding: 6px 12px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    background-color:white;
+}
+
+.rounded-button:hover, .rounded-button:focus, .rounded-button:active, .rounded-button.active, .open .dropdown-toggle.rounded-button
+{
+    color:#333;
+    background-color:#EBEBEB;
+    border-color:#ADADAD;
+}
+
+.cancel-validation { background-color:lightcoral; color:white; }
+.clear-textbox { color:red; font-weight:bold; text-decoration:none; }
+
+/* rounded textbox */
+.rounded-textbox {
+    border: 1px solid grey;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    background-color: white;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075)
+}
+
+.rounded-textbox:focus 
+{
+    border-color: #66AFE9;
+    outline: 0px none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+}
+
+/* AJAX Calendar Extender */
+
+.AJAXCalendarExtender {
+    vertical-align: middle;
+    height: 20px;
+}
+
+/* UNIVERSAL STYLING ********************************************************************************************************************************************************************************************/
+
+* 
+{ 
+    font-family: Verdana; 
+}
+
+
+/* HEADER *******************************************************************************************************************************************************************************************************/
+
+.page-title
+{
+    font-size:20pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navigation-bar-container
+{
+    background-color:cornflowerblue;
+    border-width:0px;
+    padding:5px 20px 5px 20px;
+}
+
+.navigation-bar-container .logo-container 
+{
+    width:40%;
+}
+
+.navigation-bar-container .logo-container .logo
+{
+    color: white;
+    text-decoration: none;
+    font-size: 16pt;
+}
+
+.navigation-bar-container .login-view-container
+{
+    width:59%;
+    text-align:right;
+}
+
+.navigation-bar-container .login-view-container > div 
+{
+    margin-left: 10px;
+}
+
+.navigation-bar-container .login-view-container a
+{
+    color:white;
+    text-decoration: none;
+}
+
+/* BODY *********************************************************************************************************************************************************************************************************/
+
+.body-container 
+{
+    margin:20px 30px 30px 30px;
+    min-height: 400px;
+}
+
+/* FOOTER *******************************************************************************************************************************************************************************************************/
+
+footer 
+{
+    font-size:10pt;
+    text-align:center;
+}
+
+/* MESSAGE USER CONTROL *****************************************************************************************************************************************************************************************/
+
+.message-container 
+{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.message-container > DIV > DIV > SPAN 
+{
+    text-align:left;
+    font-size: 12pt;
+}
+.message-container .message, .message-container .error 
+{ 
+    padding:5px;
+}
+.message-container .message 
+{
+    border-radius: 4px;
+    border: 1px solid #006400; /* dark green */
+    color: #006400; /* dark green */
+    background-color: #90EE90; /* light green */
+}
+    
+.message-container .error 
+{
+    border-radius: 4px;
+    border: 1px solid #FF0000; /* red */
+    color: #FF0000; /* red */
+    background-color: #FAAFBE; /* light pink */
+}
+
+
+/* LOGIN PAGE ***************************************************************************************************************************************************************************************************/
+
+.login-container *
+{
+    font-size: 10pt;
+}
+
+.login-container .input-group
+{
+    margin: 20px 0px;
+}
+
+.login-container .input-group .input-textbox 
+{
+    padding: 5px 0px;
+}
+
+/* MAIN PAGE ****************************************************************************************************************************************************************************************************/
+
+.main-links
+{
+    margin-bottom: 10px;
+}
+
+.main-links > a
+{
+    color:#6495ED;
+    text-decoration: none;
+}
+
+/* FILTER *********************************************************************************/
+
+.filter {
+    background-color: lavender;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    margin-bottom: 5px;
+    padding: 7px;
+}
+
+.filter .title {
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.filter .submitbutton {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.filter .label { text-align:right; }
+
+.filter .input-textbox { width: 100px; }
+
+.filter .input-panel { background-color: gray; }
+
+/* APPROVAL / REJECTION RO/PO/JO ********************************************************************************************************************************************************************************/
+
+.container-daftar
+{
+    font-size: 10pt;
+}
+
+.container-daftar .daftar table tr > td
+{
+}
+
+.container-daftar .daftar .item 
+{
+    background-color:cornsilk;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    margin-bottom: 5px;
+    padding:7px;
+}
+
+.container-daftar .daftar .item .info > DIV
+{
+    vertical-align: top;
+}
+
+.container-daftar .daftar .item .children-container
+{
+    padding-top: 10px;
+}
+
+.container-daftar .daftar .item .children-container .child-header
+{
+    font-weight: bold;
+}
+
+.container-daftar .daftar .item .children-container .child,
+.container-daftar .item .grand-total 
+{
+    border-top: 1px solid #CCC;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.container-daftar .grand-total { font-weight: bold; }
+
+/* REQUEST ORDER **************************************************************************/
+
+.request-order .container-daftar .daftar .item .info .col1 { min-width:200px; }
+
+/* PURCHASE ORDER *************************************************************************/
+
+.purchase-order .container-daftar .daftar .item .info .col1 { min-width: 150px; }
+.purchase-order .container-daftar .daftar .item .info .col2 { min-width: 150px; }
+
+.purchase-order .container-daftar .children-container .button { width: 60px; }
+.purchase-order .container-daftar .children-container .kode { width: 100px; }
+.purchase-order .container-daftar .children-container .nama-barang { width: 300px; }
+.purchase-order .container-daftar .children-container .quantity { width: 120px;  text-align:right;}
+.purchase-order .container-daftar .children-container .harga { width: 120px;  text-align:right;}
+.purchase-order .container-daftar .children-container .discount { width: 60px;  text-align:right;}
+.purchase-order .container-daftar .children-container .total { width: 120px; text-align:right;}
+
+.purchase-order .container-daftar .children-container .RO { padding-bottom:5px;}
+.purchase-order .container-daftar .children-container .RO .RO-amount { font-weight:bold; }
+
+/* SALES ORDER *************************************************************************/
+
+.sales-order .container-daftar .daftar .item .info .col1 { min-width: 150px; }
+.sales-order .container-daftar .daftar .item .info .col2 { min-width: 150px; }
+
+.sales-order .container-daftar .children-container .kode { width: 100px; }
+.sales-order .container-daftar .children-container .nama-barang { width: 300px; }
+.sales-order .container-daftar .children-container .quantity { width: 120px;  text-align:right;}
+.sales-order .container-daftar .children-container .harga { width: 120px;  text-align:right;}
+.sales-order .container-daftar .children-container .discount { width: 60px;  text-align:right;}
+.sales-order .container-daftar .children-container .total { width: 120px; text-align:right;}
+
+.sales-order .container-daftar .children-container .RO { padding-bottom:5px;}
+.sales-order .container-daftar .children-container .RO .RO-amount { font-weight:bold; }
+
+/* PRODUCTION ORDER ***********************************************************************/
+
+.production-order .container-daftar .daftar .item {  }
+
+.production-order .container-daftar .daftar .item .info .col1 { min-width: 150px; }
+.production-order .container-daftar .daftar .item .info .col2 { min-width: 150px; }
+
+.production-order .container-daftar .children-container .kode { width: 100px; }
+.production-order .container-daftar .children-container .nama-barang { width: 250px; }
+.production-order .container-daftar .children-container .quantity { width: 100px;  text-align:right;}
+
+.production-order .container-daftar .daftar .image-container
+{
+    width:150px;
+    border: 1px solid #D3D3D3; /* light gray */
+    text-align: center;
+    padding:0px;
+    margin-right: 6px;
+}
+
+.production-order .container-daftar .daftar .image-container > SPAN
+{
+    color: #D3D3D3; /* light gray */
+    font-size: 10pt;
+    font-style: italic;
+    position: relative;
+    padding: 0px 5px;
+
+    /* center text */
+    display:flex; 
+    align-items: center; 
+    height:100%;
+    width:100%;
+}
+
+.production-order .container-daftar .daftar .image-container > IMG
+{
+    width:auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+/* **************************************************************************************************************************************************************************************************************/
+
+
+/* **************************************************************************************************************************************************************************************************************/
+/* **************************************************************************************************************************************************************************************************************/
+/* **************************************************************************************************************************************************************************************************************/
